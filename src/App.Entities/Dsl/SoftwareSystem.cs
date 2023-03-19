@@ -1,17 +1,17 @@
-﻿namespace App.Entities;
+﻿namespace App.Entities.Dsl;
 
-public class Container
+public class SoftwareSystem
 {
-    public Container(
+    public SoftwareSystem(
         string id, 
         string tags, 
         string name, 
-        Relationship[] relationships)
+        Container[] containers)
     {
         Id = id;
         Tags = tags;
         Name = name;
-        Relationships = relationships;
+        Containers = containers;
     }
 
     public string Id { get; set; }
@@ -20,5 +20,5 @@ public class Container
     
     public string Name { get; set; }
     
-    public Relationship[]? Relationships { get; set; }
+    public Container[]? Containers { get; set; }
 }

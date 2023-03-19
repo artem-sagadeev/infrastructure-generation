@@ -1,4 +1,4 @@
-﻿namespace App.Entities;
+﻿namespace App.Entities.Dsl;
 
 public class Workspace
 {
