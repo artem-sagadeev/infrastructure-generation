@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace App.ConsoleApp;
+namespace Utilities;
 
 public class CustomStringBuilder
 {
