@@ -113,10 +113,12 @@ void AddDockerfiles(SoftwareSystem softwareSystem)
     Console.WriteLine($"{DateTime.Now.TimeOfDay} End creating Dockerfiles");
 }
 
-var softwareSystem = ReadModel("model1.json");
+var softwareSystem = ReadModel("model.json");
 await CreateFiles(softwareSystem);
 AddDockerfiles(softwareSystem);
 CreateDockerCompose(softwareSystem);
+
+
 
 
 

@@ -4,8 +4,6 @@ public class Container
 {
     public string Id { get; set; }
     
-    public string Tags { get; set; }
-    
     public string Name { get; set; }
     
     public string Technology { get; set; }
@@ -13,6 +11,8 @@ public class Container
     public ContainerProperties Properties { get; set; }
     
     public Relationship[] Relationships { get; set; }
+    
+    public Component[] Components { get; set; }
 }
 
 public class ContainerProperties

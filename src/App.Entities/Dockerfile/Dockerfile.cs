@@ -1,4 +1,4 @@
-﻿using Utilities;
+﻿using App.Utilities;
 
 namespace App.Entities.Dockerfile;
 

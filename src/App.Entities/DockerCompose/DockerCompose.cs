@@ -1,6 +1,6 @@
 ﻿using App.Entities.DockerCompose.Services;
 using App.Entities.DockerCompose.Services.Interfaces;
-using Utilities;
+using App.Utilities;
 
 namespace App.Entities.DockerCompose;
 
