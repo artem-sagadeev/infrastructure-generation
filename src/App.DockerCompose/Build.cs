@@ -1,4 +1,4 @@
-﻿namespace App.Entities.DockerCompose;
+﻿namespace App.DockerCompose;
 
 public class Build
 {

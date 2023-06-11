@@ -1,9 +1,9 @@
-﻿using App.Entities.DockerCompose;
-using App.Entities.DockerCompose.Services;
-using App.Entities.DockerCompose.Services.Interfaces;
-using App.Entities.Dsl;
+﻿using App.DockerCompose.Services;
+using App.DockerCompose.Services.Interfaces;
+using App.DotnetApps;
+using App.Dsl;
 
-namespace App.ConsoleApp;
+namespace App.DockerCompose;
 
 public class DockerComposeBuilder
 {
@@ -18,21 +18,21 @@ public class DockerComposeBuilder
             Services = new List<IService>()
         };
     }
-
-    public void AddDotnetApp(Container container)
+    
+    public void AddDotnetApp(Service service)
     {
         var dotnetApp = new Dotnet
         {
-            Name = container.Name,
+            Name = service.Name,
             Image = new Image
             {
-                Name = container.Name.ToLower(),
-                Version = container.Properties.ImageVersion ?? "latest"
+                Name = service.Name.ToLower(),
+                Version = "latest"
             },
             Build = new Build
             {
-                Context = $"./{File.Name}",
-                Dockerfile = $"{container.Name}/Dockerfile"
+                Context = $"./{File.Name}/{service.Name}",
+                Dockerfile = $"{service.MainProject.Name}/Dockerfile"
             }
         };
         

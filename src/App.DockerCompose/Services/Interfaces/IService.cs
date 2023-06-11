@@ -1,4 +1,4 @@
-﻿namespace App.Entities.DockerCompose.Services.Interfaces;
+﻿namespace App.DockerCompose.Services.Interfaces;
 
 public interface IService
 {

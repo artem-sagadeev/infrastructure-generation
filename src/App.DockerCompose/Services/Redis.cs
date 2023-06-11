@@ -1,6 +1,6 @@
-﻿using App.Entities.DockerCompose.Services.Interfaces;
+﻿using App.DockerCompose.Services.Interfaces;
 
-namespace App.Entities.DockerCompose.Services;
+namespace App.DockerCompose.Services;
 
 public class Redis : IService
 {

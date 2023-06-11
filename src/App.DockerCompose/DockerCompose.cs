@@ -1,8 +1,8 @@
-﻿using App.Entities.DockerCompose.Services;
-using App.Entities.DockerCompose.Services.Interfaces;
-using App.Utilities;
+﻿using App.Common;
+using App.DockerCompose.Services;
+using App.DockerCompose.Services.Interfaces;
 
-namespace App.Entities.DockerCompose;
+namespace App.DockerCompose;
 
 public class DockerCompose
 {

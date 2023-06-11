@@ -1,4 +1,4 @@
-﻿namespace App.Entities.Dsl;
+﻿namespace App.Dsl;
 
 public class Component
 {
@@ -15,5 +15,5 @@ public class Component
 
 public class ComponentProperties
 {
-    
+    public string AppTemplate { get; set; }
 }

@@ -11,7 +11,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\App.Entities\App.Entities.csproj" />
+      <ProjectReference Include="..\App.DockerCompose\App.DockerCompose.csproj" />
+      <ProjectReference Include="..\App.Dockerfiles\App.Dockerfiles.csproj" />
+      <ProjectReference Include="..\App.DotnetApps\App.DotnetApps.csproj" />
     </ItemGroup>
 
 </Project>

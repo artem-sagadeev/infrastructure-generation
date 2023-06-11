@@ -1,4 +1,4 @@
-﻿namespace App.Entities.Dsl;
+﻿namespace App.Dsl;
 
 public class Container
 {
@@ -18,6 +18,4 @@ public class Container
 public class ContainerProperties
 {
     public string ImageVersion { get; set; }
-    
-    public string AppTemplate { get; set; }
 }
