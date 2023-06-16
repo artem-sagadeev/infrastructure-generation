@@ -4,8 +4,16 @@ using App.DockerCompose;
 using App.Dockerfiles;
 using App.DotnetApps;
 
-const string modelFilePath = "model1.json";
-const string pathToPlaceFiles = "./";
+const string defaultModelFilePath = "model1.json";
+const string defaultPathToPlaceFiles = "./";
+
+Console.WriteLine("Укажите путь до json-файла, содержащего модель информационной системы");
+var modelFilePath = Console.ReadLine();
+modelFilePath = string.IsNullOrEmpty(modelFilePath) ? defaultModelFilePath : modelFilePath;
+
+Console.WriteLine("Укажите путь для расположения сгенерированных файлов");
+var pathToPlaceFiles = Console.ReadLine();
+pathToPlaceFiles = string.IsNullOrEmpty(pathToPlaceFiles) ? defaultPathToPlaceFiles : pathToPlaceFiles;
 
 var configuration = new Configuration(pathToPlaceFiles);
 
