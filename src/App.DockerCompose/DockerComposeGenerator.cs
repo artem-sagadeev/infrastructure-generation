@@ -21,6 +21,9 @@ public static class DockerComposeGenerator
                 case "redis":
                     dockerComposeBuilder.AddRedis(container);
                     break;
+                case "rabbit":
+                    dockerComposeBuilder.AddRabbit(container);
+                    break;
                 case "postgres":
                     dockerComposeBuilder.AddPostgres(container);
                     break;

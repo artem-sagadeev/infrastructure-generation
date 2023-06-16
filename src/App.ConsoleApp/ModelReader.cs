@@ -5,7 +5,7 @@ namespace App.ConsoleApp;
 
 public static class ModelReader
 {
-    public static SoftwareSystem ReadModel(string modelName)
+    public static SoftwareSystem[] ReadModel(string modelName)
     {
         Console.WriteLine($"{DateTime.Now.TimeOfDay} Start reading model");
     
@@ -17,6 +17,6 @@ public static class ModelReader
     
         Console.WriteLine($"{DateTime.Now.TimeOfDay} End reading model");
 
-        return workspace.Model.SoftwareSystems[0];
+        return workspace.Model.SoftwareSystems;
     }
 }

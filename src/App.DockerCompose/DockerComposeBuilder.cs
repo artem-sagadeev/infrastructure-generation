@@ -54,6 +54,21 @@ public class DockerComposeBuilder
         File.Services.Add(redis);
     }
     
+    public void AddRabbit(Container container)
+    {
+        var rabbit = new Rabbit
+        {
+            Name = container.Name,
+            Image = new Image
+            {
+                Name = Redis.ImageName,
+                Version = container.Properties.ImageVersion ?? "latest"
+            }
+        };
+        
+        File.Services.Add(rabbit);
+    }
+    
     public void AddPostgres(Container container)
     {
         var postgres = new Postgres

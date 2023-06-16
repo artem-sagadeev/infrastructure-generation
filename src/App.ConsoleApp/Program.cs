@@ -9,15 +9,10 @@ const string pathToPlaceFiles = "./";
 
 var configuration = new Configuration(pathToPlaceFiles);
 
-var softwareSystem = ModelReader.ReadModel(modelFilePath);
-var solution = DotnetAppsGenerator.CreateDotnetApps(softwareSystem, configuration);
-DockerfilesGenerator.CreateDockerfiles(solution, configuration);
-DockerComposeGenerator.CreateDockerCompose(softwareSystem, solution, configuration);
-
-
-
-
-
-
-
-
+var softwareSystems = ModelReader.ReadModel(modelFilePath);
+foreach (var softwareSystem in softwareSystems)
+{
+    var solution = DotnetAppsGenerator.CreateDotnetApps(softwareSystem, configuration);
+    DockerfilesGenerator.CreateDockerfiles(solution, configuration);
+    DockerComposeGenerator.CreateDockerCompose(softwareSystem, solution, configuration);
+}
