@@ -95,7 +95,7 @@ public static class DotnetAppsGenerator
             var projectFolderPath = $"{configuration.PathToPlaceFiles}/{solution.Name}/{project.Service.Name}/{project.Name}";
             
             yield return $"new {project.AppTemplate} --name {project.Name} --output {projectFolderPath} --force";
-            yield return $"dotnet sln {solutionFilePath} add {projectFolderPath}";
+            yield return $"sln {solutionFilePath} add {projectFolderPath}";
         }
     }
 }
