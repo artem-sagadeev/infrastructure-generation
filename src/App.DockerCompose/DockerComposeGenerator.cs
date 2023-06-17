@@ -27,6 +27,9 @@ public static class DockerComposeGenerator
                 case "postgres":
                     dockerComposeBuilder.AddPostgres(container);
                     break;
+                case "mongo":
+                    dockerComposeBuilder.AddMongo(container);
+                    break;
             }
         }
 

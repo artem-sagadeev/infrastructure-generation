@@ -54,6 +54,21 @@ public class DockerComposeBuilder
         File.Services.Add(redis);
     }
     
+    public void AddMongo(Container container)
+    {
+        var mongo = new Mongo
+        {
+            Name = container.Name,
+            Image = new Image
+            {
+                Name = Mongo.ImageName,
+                Version = container.Properties?.ImageVersion ?? "latest"
+            }
+        };
+        
+        File.Services.Add(mongo);
+    }
+    
     public void AddRabbit(Container container)
     {
         var rabbit = new Rabbit
@@ -61,7 +76,7 @@ public class DockerComposeBuilder
             Name = container.Name,
             Image = new Image
             {
-                Name = Redis.ImageName,
+                Name = Rabbit.ImageName,
                 Version = container.Properties.ImageVersion ?? "latest"
             }
         };

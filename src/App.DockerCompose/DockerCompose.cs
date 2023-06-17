@@ -40,6 +40,20 @@ public class DockerCompose
                             .AppendLine($"dockerfile: {dotnet.Build.Dockerfile}", level + 2)
                             .AppendLine();
                         break;
+                    case Rabbit rabbit:
+                        stringBuilder
+                            .AppendLine($"{rabbit.Name}:", level)
+                            .AppendLine($"container_name: {rabbit.Name}", level + 1)
+                            .AppendLine($"image: {rabbit.Image.Name}:{rabbit.Image.Version}", level + 1)
+                            .AppendLine();
+                        break;
+                    case Mongo mongo:
+                        stringBuilder
+                            .AppendLine($"{mongo.Name}:", level)
+                            .AppendLine($"container_name: {mongo.Name}", level + 1)
+                            .AppendLine($"image: {mongo.Image.Name}:{mongo.Image.Version}", level + 1)
+                            .AppendLine();
+                        break;
                     case Redis redis:
                         stringBuilder
                             .AppendLine($"{redis.Name}:", level)
