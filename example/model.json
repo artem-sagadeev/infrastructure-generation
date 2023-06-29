@@ -1,0 +1,557 @@
+{
+    "id": 79404,
+    "name": "Shop",
+    "description": "Description",
+    "revision": 17,
+    "lastModifiedDate": "2023-06-17T13:22:11Z",
+    "lastModifiedUser": "sagadeev.artem2001@gmail.com",
+    "lastModifiedAgent": "structurizr-cloud",
+    "properties": {
+        "structurizr.dsl": "d29ya3NwYWNlIFNob3AgewoKICAgIG1vZGVsIHsKICAgICAgICBzb2Z0d2FyZVN5c3RlbSBTaG9wIHsKICAgICAgICAgICAgcG9zdGdyZXMgPSBjb250YWluZXIgUG9zdGdyZXMgewogICAgICAgICAgICAgICAgdGVjaG5vbG9neSBwb3N0Z3JlcwogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICBtb25nbyA9IGNvbnRhaW5lciBNb25nbyB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5IG1vbmdvCiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIHJlZGlzID0gY29udGFpbmVyIFJlZGlzIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgcmVkaXMKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgcmFiYml0ID0gY29udGFpbmVyIFJhYmJpdCB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5IHJhYmJpdAogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICBvcmRlcnMgPSBjb250YWluZXIgT3JkZXJzQXBpIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgZG90bmV0CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIGNvbXBvbmVudCBEb21haW4gewogICAgICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICAgICBhcHBUZW1wbGF0ZSBjbGFzc2xpYgogICAgICAgICAgICAgICAgICAgIH0gIAogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBjb21wb25lbnQgRGF0YSB7CiAgICAgICAgICAgICAgICAgICAgcHJvcGVydGllcyB7CiAgICAgICAgICAgICAgICAgICAgICAgIGFwcFRlbXBsYXRlIGNsYXNzbGliCiAgICAgICAgICAgICAgICAgICAgfSAgCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIGNvbXBvbmVudCBBcGkgewogICAgICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICAgICBhcHBUZW1wbGF0ZSB3ZWJhcGkKICAgICAgICAgICAgICAgICAgICB9ICAKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgY2F0YWxvZyA9IGNvbnRhaW5lciBDYXRhbG9nQXBpIHsKICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgZG90bmV0CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIGNvbXBvbmVudCBEb21haW4gewogICAgICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICAgICBhcHBUZW1wbGF0ZSBjbGFzc2xpYgogICAgICAgICAgICAgICAgICAgIH0gIAogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBjb21wb25lbnQgRGF0YSB7CiAgICAgICAgICAgICAgICAgICAgcHJvcGVydGllcyB7CiAgICAgICAgICAgICAgICAgICAgICAgIGFwcFRlbXBsYXRlIGNsYXNzbGliCiAgICAgICAgICAgICAgICAgICAgfSAgCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIGNvbXBvbmVudCBBcGkgewogICAgICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICAgICBhcHBUZW1wbGF0ZSB3ZWJhcGkKICAgICAgICAgICAgICAgICAgICB9ICAKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgYmFza2V0ID0gY29udGFpbmVyIEJhc2tldEFwaSB7CiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5IGRvdG5ldAogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBjb21wb25lbnQgRG9tYWluIHsKICAgICAgICAgICAgICAgICAgICBwcm9wZXJ0aWVzIHsKICAgICAgICAgICAgICAgICAgICAgICAgYXBwVGVtcGxhdGUgY2xhc3NsaWIKICAgICAgICAgICAgICAgICAgICB9ICAKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgY29tcG9uZW50IERhdGEgewogICAgICAgICAgICAgICAgICAgIHByb3BlcnRpZXMgewogICAgICAgICAgICAgICAgICAgICAgICBhcHBUZW1wbGF0ZSBjbGFzc2xpYgogICAgICAgICAgICAgICAgICAgIH0gIAogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBjb21wb25lbnQgQXBpIHsKICAgICAgICAgICAgICAgICAgICBwcm9wZXJ0aWVzIHsKICAgICAgICAgICAgICAgICAgICAgICAgYXBwVGVtcGxhdGUgd2ViYXBpCiAgICAgICAgICAgICAgICAgICAgfSAgCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIHdlYiA9IGNvbnRhaW5lciBXZWJBcHAgewogICAgICAgICAgICAgICAgdGVjaG5vbG9neSBkb3RuZXQKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgY29tcG9uZW50IEFwcCB7CiAgICAgICAgICAgICAgICAgICAgcHJvcGVydGllcyB7CiAgICAgICAgICAgICAgICAgICAgICAgIGFwcFRlbXBsYXRlIHdlYmFwcAogICAgICAgICAgICAgICAgICAgIH0gIAogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICB3ZWIgLT4gb3JkZXJzCiAgICAgICAgICAgIHdlYiAtPiBjYXRhbG9nCiAgICAgICAgICAgIHdlYiAtPiBiYXNrZXQKICAgICAgICAgICAgCiAgICAgICAgICAgIG9yZGVycyAtPiBwb3N0Z3JlcwogICAgICAgICAgICBjYXRhbG9nIC0+IG1vbmdvCiAgICAgICAgICAgIGJhc2tldCAtPiByZWRpcwogICAgICAgICAgICAKICAgICAgICAgICAgb3JkZXJzIC0+IHJhYmJpdAogICAgICAgICAgICBjYXRhbG9nIC0+IHJhYmJpdAogICAgICAgICAgICBiYXNrZXQgLT4gcmFiYml0CiAgICAgICAgfQogICAgfQp9"
+    },
+    "model": {
+        "softwareSystems": [
+            {
+                "id": "1",
+                "tags": "Element,Software System",
+                "name": "Shop",
+                "location": "Unspecified",
+                "containers": [
+                    {
+                        "id": "5",
+                        "tags": "Element,Container",
+                        "properties": {
+                            "structurizr.dsl.identifier": "rabbit"
+                        },
+                        "name": "Rabbit",
+                        "technology": "rabbit",
+                        "documentation": {}
+                    },
+                    {
+                        "id": "6",
+                        "tags": "Element,Container",
+                        "properties": {
+                            "structurizr.dsl.identifier": "orders"
+                        },
+                        "name": "OrdersApi",
+                        "relationships": [
+                            {
+                                "id": "26",
+                                "tags": "Relationship",
+                                "sourceId": "6",
+                                "destinationId": "5"
+                            },
+                            {
+                                "id": "23",
+                                "tags": "Relationship",
+                                "sourceId": "6",
+                                "destinationId": "2"
+                            }
+                        ],
+                        "technology": "dotnet",
+                        "components": [
+                            {
+                                "id": "9",
+                                "tags": "Element,Component",
+                                "properties": {
+                                    "appTemplate": "webapi"
+                                },
+                                "name": "Api",
+                                "documentation": {}
+                            },
+                            {
+                                "id": "8",
+                                "tags": "Element,Component",
+                                "properties": {
+                                    "appTemplate": "classlib"
+                                },
+                                "name": "Data",
+                                "documentation": {}
+                            },
+                            {
+                                "id": "7",
+                                "tags": "Element,Component",
+                                "properties": {
+                                    "appTemplate": "classlib"
+                                },
+                                "name": "Domain",
+                                "documentation": {}
+                            }
+                        ],
+                        "documentation": {}
+                    },
+                    {
+                        "id": "14",
+                        "tags": "Element,Container",
+                        "properties": {
+                            "structurizr.dsl.identifier": "basket"
+                        },
+                        "name": "BasketApi",
+                        "relationships": [
+                            {
+                                "id": "28",
+                                "tags": "Relationship",
+                                "sourceId": "14",
+                                "destinationId": "5"
+                            },
+                            {
+                                "id": "25",
+                                "tags": "Relationship",
+                                "sourceId": "14",
+                                "destinationId": "4"
+                            }
+                        ],
+                        "technology": "dotnet",
+                        "components": [
+                            {
+                                "id": "16",
+                                "tags": "Element,Component",
+                                "properties": {
+                                    "appTemplate": "classlib"
+                                },
+                                "name": "Data",
+                                "documentation": {}
+                            },
+                            {
+                                "id": "17",
+                                "tags": "Element,Component",
+                                "properties": {
+                                    "appTemplate": "webapi"
+                                },
+                                "name": "Api",
+                                "documentation": {}
+                            },
+                            {
+                                "id": "15",
+                                "tags": "Element,Component",
+                                "properties": {
+                                    "appTemplate": "classlib"
+                                },
+                                "name": "Domain",
+                                "documentation": {}
+                            }
+                        ],
+                        "documentation": {}
+                    },
+                    {
+                        "id": "3",
+                        "tags": "Element,Container",
+                        "properties": {
+                            "structurizr.dsl.identifier": "mongo"
+                        },
+                        "name": "Mongo",
+                        "technology": "mongo",
+                        "documentation": {}
+                    },
+                    {
+                        "id": "2",
+                        "tags": "Element,Container",
+                        "properties": {
+                            "structurizr.dsl.identifier": "postgres"
+                        },
+                        "name": "Postgres",
+                        "technology": "postgres",
+                        "documentation": {}
+                    },
+                    {
+                        "id": "18",
+                        "tags": "Element,Container",
+                        "properties": {
+                            "structurizr.dsl.identifier": "web"
+                        },
+                        "name": "WebApp",
+                        "relationships": [
+                            {
+                                "id": "20",
+                                "tags": "Relationship",
+                                "sourceId": "18",
+                                "destinationId": "6"
+                            },
+                            {
+                                "id": "22",
+                                "tags": "Relationship",
+                                "sourceId": "18",
+                                "destinationId": "14"
+                            },
+                            {
+                                "id": "21",
+                                "tags": "Relationship",
+                                "sourceId": "18",
+                                "destinationId": "10"
+                            }
+                        ],
+                        "technology": "dotnet",
+                        "components": [
+                            {
+                                "id": "19",
+                                "tags": "Element,Component",
+                                "properties": {
+                                    "appTemplate": "webapp"
+                                },
+                                "name": "App",
+                                "documentation": {}
+                            }
+                        ],
+                        "documentation": {}
+                    },
+                    {
+                        "id": "10",
+                        "tags": "Element,Container",
+                        "properties": {
+                            "structurizr.dsl.identifier": "catalog"
+                        },
+                        "name": "CatalogApi",
+                        "relationships": [
+                            {
+                                "id": "27",
+                                "tags": "Relationship",
+                                "sourceId": "10",
+                                "destinationId": "5"
+                            },
+                            {
+                                "id": "24",
+                                "tags": "Relationship",
+                                "sourceId": "10",
+                                "destinationId": "3"
+                            }
+                        ],
+                        "technology": "dotnet",
+                        "components": [
+                            {
+                                "id": "13",
+                                "tags": "Element,Component",
+                                "properties": {
+                                    "appTemplate": "webapi"
+                                },
+                                "name": "Api",
+                                "documentation": {}
+                            },
+                            {
+                                "id": "12",
+                                "tags": "Element,Component",
+                                "properties": {
+                                    "appTemplate": "classlib"
+                                },
+                                "name": "Data",
+                                "documentation": {}
+                            },
+                            {
+                                "id": "11",
+                                "tags": "Element,Component",
+                                "properties": {
+                                    "appTemplate": "classlib"
+                                },
+                                "name": "Domain",
+                                "documentation": {}
+                            }
+                        ],
+                        "documentation": {}
+                    },
+                    {
+                        "id": "4",
+                        "tags": "Element,Container",
+                        "properties": {
+                            "structurizr.dsl.identifier": "redis"
+                        },
+                        "name": "Redis",
+                        "technology": "redis",
+                        "documentation": {}
+                    }
+                ],
+                "documentation": {}
+            }
+        ]
+    },
+    "documentation": {},
+    "views": {
+        "systemLandscapeViews": [
+            {
+                "key": "SystemLandscape",
+                "order": 1,
+                "paperSize": "A6_Landscape",
+                "dimensions": {
+                    "width": 866,
+                    "height": 716
+                },
+                "automaticLayout": {
+                    "implementation": "Graphviz",
+                    "rankDirection": "TopBottom",
+                    "rankSeparation": 300,
+                    "nodeSeparation": 300,
+                    "edgeSeparation": 0,
+                    "vertices": false
+                },
+                "enterpriseBoundaryVisible": true,
+                "elements": [
+                    {
+                        "id": "1",
+                        "x": 208,
+                        "y": 208
+                    }
+                ]
+            }
+        ],
+        "systemContextViews": [
+            {
+                "key": "Shop-SystemContext",
+                "order": 2,
+                "softwareSystemId": "1",
+                "paperSize": "A6_Landscape",
+                "dimensions": {
+                    "width": 866,
+                    "height": 716
+                },
+                "automaticLayout": {
+                    "implementation": "Graphviz",
+                    "rankDirection": "TopBottom",
+                    "rankSeparation": 300,
+                    "nodeSeparation": 300,
+                    "edgeSeparation": 0,
+                    "vertices": false
+                },
+                "enterpriseBoundaryVisible": true,
+                "elements": [
+                    {
+                        "id": "1",
+                        "x": 208,
+                        "y": 208
+                    }
+                ]
+            }
+        ],
+        "containerViews": [
+            {
+                "key": "Shop-Container",
+                "order": 3,
+                "softwareSystemId": "1",
+                "dimensions": {
+                    "width": 3140,
+                    "height": 2011
+                },
+                "automaticLayout": {
+                    "implementation": "Graphviz",
+                    "rankDirection": "TopBottom",
+                    "rankSeparation": 300,
+                    "nodeSeparation": 300,
+                    "edgeSeparation": 0,
+                    "vertices": false
+                },
+                "externalSoftwareSystemBoundariesVisible": true,
+                "elements": [
+                    {
+                        "id": "2",
+                        "x": 2469,
+                        "y": 1420
+                    },
+                    {
+                        "id": "14",
+                        "x": 1344,
+                        "y": 820
+                    },
+                    {
+                        "id": "3",
+                        "x": 219,
+                        "y": 1420
+                    },
+                    {
+                        "id": "4",
+                        "x": 1719,
+                        "y": 1420
+                    },
+                    {
+                        "id": "5",
+                        "x": 969,
+                        "y": 1420
+                    },
+                    {
+                        "id": "6",
+                        "x": 2094,
+                        "y": 820
+                    },
+                    {
+                        "id": "18",
+                        "x": 1344,
+                        "y": 220
+                    },
+                    {
+                        "id": "10",
+                        "x": 594,
+                        "y": 820
+                    }
+                ],
+                "relationships": [
+                    {
+                        "id": "28"
+                    },
+                    {
+                        "id": "27"
+                    },
+                    {
+                        "id": "26"
+                    },
+                    {
+                        "id": "25"
+                    },
+                    {
+                        "id": "24"
+                    },
+                    {
+                        "id": "23"
+                    },
+                    {
+                        "id": "22"
+                    },
+                    {
+                        "id": "21"
+                    },
+                    {
+                        "id": "20"
+                    }
+                ]
+            }
+        ],
+        "componentViews": [
+            {
+                "key": "Shop-OrdersApi-Component",
+                "order": 6,
+                "paperSize": "A4_Landscape",
+                "dimensions": {
+                    "width": 2608,
+                    "height": 958
+                },
+                "automaticLayout": {
+                    "implementation": "Graphviz",
+                    "rankDirection": "TopBottom",
+                    "rankSeparation": 300,
+                    "nodeSeparation": 300,
+                    "edgeSeparation": 0,
+                    "vertices": false
+                },
+                "containerId": "6",
+                "externalContainerBoundariesVisible": true,
+                "elements": [
+                    {
+                        "id": "7",
+                        "x": 1829,
+                        "y": 329
+                    },
+                    {
+                        "id": "8",
+                        "x": 1079,
+                        "y": 329
+                    },
+                    {
+                        "id": "9",
+                        "x": 329,
+                        "y": 329
+                    }
+                ]
+            },
+            {
+                "key": "Shop-WebApp-Component",
+                "order": 7,
+                "paperSize": "A6_Landscape",
+                "dimensions": {
+                    "width": 1108,
+                    "height": 958
+                },
+                "automaticLayout": {
+                    "implementation": "Graphviz",
+                    "rankDirection": "TopBottom",
+                    "rankSeparation": 300,
+                    "nodeSeparation": 300,
+                    "edgeSeparation": 0,
+                    "vertices": false
+                },
+                "containerId": "18",
+                "externalContainerBoundariesVisible": true,
+                "elements": [
+                    {
+                        "id": "19",
+                        "x": 329,
+                        "y": 329
+                    }
+                ]
+            },
+            {
+                "key": "Shop-BasketApi-Component",
+                "order": 4,
+                "paperSize": "A4_Landscape",
+                "dimensions": {
+                    "width": 2608,
+                    "height": 958
+                },
+                "automaticLayout": {
+                    "implementation": "Graphviz",
+                    "rankDirection": "TopBottom",
+                    "rankSeparation": 300,
+                    "nodeSeparation": 300,
+                    "edgeSeparation": 0,
+                    "vertices": false
+                },
+                "containerId": "14",
+                "externalContainerBoundariesVisible": true,
+                "elements": [
+                    {
+                        "id": "15",
+                        "x": 1829,
+                        "y": 329
+                    },
+                    {
+                        "id": "16",
+                        "x": 1079,
+                        "y": 329
+                    },
+                    {
+                        "id": "17",
+                        "x": 329,
+                        "y": 329
+                    }
+                ]
+            },
+            {
+                "key": "Shop-CatalogApi-Component",
+                "order": 5,
+                "paperSize": "A4_Landscape",
+                "dimensions": {
+                    "width": 2608,
+                    "height": 958
+                },
+                "automaticLayout": {
+                    "implementation": "Graphviz",
+                    "rankDirection": "TopBottom",
+                    "rankSeparation": 300,
+                    "nodeSeparation": 300,
+                    "edgeSeparation": 0,
+                    "vertices": false
+                },
+                "containerId": "10",
+                "externalContainerBoundariesVisible": true,
+                "elements": [
+                    {
+                        "id": "11",
+                        "x": 1829,
+                        "y": 329
+                    },
+                    {
+                        "id": "12",
+                        "x": 1079,
+                        "y": 329
+                    },
+                    {
+                        "id": "13",
+                        "x": 329,
+                        "y": 329
+                    }
+                ]
+            }
+        ],
+        "configuration": {
+            "branding": {},
+            "styles": {},
+            "terminology": {},
+            "metadataSymbols": "SquareBrackets",
+            "lastSavedView": "Shop-Container"
+        }
+    }
+}
